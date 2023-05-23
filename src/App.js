@@ -8,6 +8,8 @@ function App() {
         <section className="flex flex-row flex-wrap">
           <div>
             <h1>TRANSFORME SUA SAÚDE!</h1>
+            <h1>TRANSFORME SEU NODA!</h1>
+
             <button className="w-48 h-12 bg-green-500 border-solid rounded-full">
               AGENDE AGORA
             </button>
