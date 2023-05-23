@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          OPA
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header"></header>
+      <body className="flex">
+        <section className="flex flex-row flex-wrap">
+          <div>
+            <h1>TRANSFORME SUA SAÚDE!</h1>
+            <button className="w-48 h-12 bg-green-500 border-solid rounded-full">
+              AGENDE AGORA
+            </button>
+          </div>
+          <div>
+            <p className="w-1/3 text-left">
+              Com nossa equipe especializada e técnicas comprovadas,
+              ajudamos você superar todos os seus problemas!
+            </p>
+          </div>
+        </section>
+      </body>
     </div>
   );
 }
