@@ -1,0 +1,23 @@
+.layout {
+    width: 1800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.teste {
+    width: 1800px;
+    margin-top: 100px;
+    margin-bottom: 18px;
+}
+
+
+/* .start {
+    justify-content: flex-start;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: flex-start;
+} */
