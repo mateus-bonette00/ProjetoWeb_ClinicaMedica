@@ -14,3 +14,9 @@ body,
 #root {
 background-color: #fff;
 }
+
+.bg-imagemHome {
+    background-image: url('components/img/imageHome.png');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem no elemento */
+}
