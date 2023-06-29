@@ -23,7 +23,7 @@ function Footer(){
                 </li>
             </ul>
             <p className={styles.copy_right}>
-                <span>Gustavo Noda - Thalles - Mateus Bonette</span> &copy; 2023
+                <span>Gustavo Noda - Thalles Alexsander- Mateus Bonette</span> &copy; 2023
             </p>
         </footer>
   )

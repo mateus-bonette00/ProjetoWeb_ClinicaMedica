@@ -1,5 +1,11 @@
+import MainPage from "../MainPage"
+
 function Home (){
-    return <h1>Home.</h1>
+    return (
+        <div>
+            <MainPage/>
+        </div>
+    )
 }
 
 export default Home
