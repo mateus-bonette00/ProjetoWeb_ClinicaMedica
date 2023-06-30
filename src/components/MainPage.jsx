@@ -1,5 +1,4 @@
 import React from "react";
-import imagemHome from "./img/imageHome.png";
 
 function MainPage() {
   return (
