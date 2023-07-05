@@ -1,3 +1,4 @@
+import LocalMap from "../LocalMap"
 import MainPage from "../MainPage"
 import SobreNosSection from "../SobreNosSection"
 
@@ -6,6 +7,7 @@ function Home (){
         <div>
             <MainPage/>
             <SobreNosSection/>
+            <LocalMap/>
         </div>
             
     )

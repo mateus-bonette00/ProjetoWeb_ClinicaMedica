@@ -19,6 +19,7 @@
     background-color: var(--mainColor);
     display: flex;
     align-items: center;
+    z-index: 10;
 }
 
 .list {
