@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CardSobreNos from "./Card_SobreNos";
+import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 
 const CarouselSobreNos = ({ cards }) => {
   const [currentCard, setCurrentCard] = useState(0);
@@ -19,9 +20,9 @@ const CarouselSobreNos = ({ cards }) => {
           className="prev-button text-black text-7xl"
           onClick={handlePrev}
         >
-        &lt;
+          <BiLeftArrow />
         </button>
-        <div className="fle">
+        <div>
           {cards
             .slice(currentCard, currentCard + 1)
             .map((card, index) => (
@@ -37,7 +38,7 @@ const CarouselSobreNos = ({ cards }) => {
           className="prev-button text-black text-7xl"
           onClick={handleNext}
         >
-          &gt;
+          <BiRightArrow />
         </button>
       </div>
     </div>

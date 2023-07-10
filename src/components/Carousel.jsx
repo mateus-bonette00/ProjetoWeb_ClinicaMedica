@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {BiRightArrow, BiLeftArrow} from "react-icons/bi";
 import Card from "./Card";
 
 const Carousel = ({ cards }) => {
@@ -19,10 +20,10 @@ const Carousel = ({ cards }) => {
       </div>
       <div className="flex flex-row justify-center items-center bg-greeny w-screen h-[500px]">
         <button
-          className="prev-button text-white text-7xl"
+          className="prev-button text-white text-7xl mr-10"
           onClick={handlePrev}
         >
-          &lt;
+          <BiLeftArrow/>
         </button>
         <div className="flex space-x-4">
           {cards
@@ -37,10 +38,10 @@ const Carousel = ({ cards }) => {
             ))}
         </div>
         <button
-          className="prev-button text-white text-7xl"
+          className="prev-button text-white text-7xl ml-10"
           onClick={handleNext}
         >
-          &gt;
+          <BiRightArrow/>
         </button>
       </div>
     </div>
