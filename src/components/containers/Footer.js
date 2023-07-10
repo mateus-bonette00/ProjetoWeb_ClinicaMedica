@@ -1,15 +1,15 @@
 import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import { Link } from "react-router-dom"
 
-// import logo from '../../img/logo_navbar.png'
+import logo from './logo_navbar.png'
 import styles from './Footer.module.css'
 
 function Footer(){
     return(
         
         <footer className={styles.footer}>
-                <Link to='/'>Logo
-                    {/* <img src={logo} alt='logo' /> */}
+                <Link to='/'>
+                    <img src={logo} alt='logo' />
                 </Link>        
             <ul className={styles.social_list}>
                 <li>

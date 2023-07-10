@@ -1,19 +1,10 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
 
-
-function SobreNosSection() {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate('/sobrenos');
-  };
-  
+function TextSobreNos() {
   return (
     <section className="flex flex-col justify-center items-center w-screen mt-12 mb-12">
-      <h1 className="text-greeny text-7xl mb-12">Sobre Nós</h1>
-      <p className="w-[1000px] mb-8 first-letter:text-5xl first-letter:text-greeny">
-        {" "}
+      <p className="w-[1000px]  first-letter:text-5xl first-letter:text-greeny">
+        
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Vestibulum vel auctor nisi. Phasellus tempor maximus eleifend.
         Aliquam erat volutpat. Donec ullamcorper tempus dolor et
@@ -27,7 +18,9 @@ function SobreNosSection() {
         arcu id porttitor. Fusce sed nulla ligula. Nunc quis accumsan
         ante.
       </p>
+      <br/>
       <p className="w-[1000px]">
+      
         Vivamus lacinia aliquam tempor. Pellentesque viverra, sem quis
         laoreet vehicula, nibh sem iaculis lectus, efficitur venenatis
         felis sapien nec ante. Etiam sem nibh, consectetur sit amet
@@ -42,11 +35,18 @@ function SobreNosSection() {
         sollicitudin. Nam vehicula orci arcu, vitae porttitor augue
         tempus sodales. Morbi bibendum nunc at euismod placerat.
       </p>
-      <button onClick={handleClick} className="bg-greeny w-[250px] h-[40px] rounded-full mt-4 hover:bg-black text-white text-2xl">
-        Ver Mais
-      </button>
+      <br/> 
+      <p className="w-[1000px]">
+      
+        Morbi varius nisi nec congue sagittis. Duis in faucibus massa, porttitor hendrerit augue. Donec orci orci, congue quis ultricies eget, porta pellentesque lorem. Proin sit amet lectus est. Ut lobortis ac tellus in laoreet. In elementum sed enim eu mollis. Curabitur eleifend euismod aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam lectus tortor, sodales vitae diam nec, eleifend sagittis nisi. Cras id nunc laoreet, mattis dui et, tempor odio. Sed vel eleifend leo. Ut sit amet felis tortor. Cras at nisl sodales, fringilla libero at, dictum sapien. Vestibulum gravida dignissim lacus, in congue quam efficitur non. Sed quis vestibulum nulla.
+      </p>
+      <br/> 
+      <p className="w-[1000px]">
+    
+        Fusce ultricies ex eget purus scelerisque, eget ornare metus pellentesque. Quisque mattis tincidunt tortor in pellentesque. Sed suscipit orci lacus, id pellentesque tortor ornare eu. Integer ut ex nisl. Ut non laoreet erat, eget finibus diam. Integer sit amet quam ac turpis molestie tincidunt. Ut leo lectus, dictum tincidunt imperdiet condimentum, mollis in sem. Curabitur mauris risus, tempor eget cursus sit amet, lacinia eu elit.
+      </p>
     </section>
   );
 }
 
-export default SobreNosSection;
+export default TextSobreNos;

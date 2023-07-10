@@ -26,7 +26,7 @@ const cards = [
 
 function Home() {
   return (
-    <div>
+    <div className="PageHome">
       <MainPage />
       <SobreNosSection />
       <Carousel cards={cards} />

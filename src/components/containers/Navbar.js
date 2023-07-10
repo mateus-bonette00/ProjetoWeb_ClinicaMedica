@@ -1,17 +1,16 @@
 import { Link } from "react-router-dom"
 
-import Layout from "./Layout"
+// import Layout from "./Layout"
 
 import styles from './Navbar.module.css'
 
-// import logo from '../../img/logo_navbar.png'
+import logo from './logo_navbar.png'
 
 function Navbar() {
     return(
         <nav class={styles.navbar}>
-           <Layout>
-                <Link to='/'>Logo
-                    {/* <img src={logo} alt='logo' /> */}
+                <Link to='/'>
+                    <img src={logo} alt='logo' />
                 </Link>
                 <ul class={styles.list}>
                     <li class={styles.item}>
@@ -19,18 +18,18 @@ function Navbar() {
                     </li>
                     
                     <li class={styles.item}>
-                        <Link to ="/contact">SOBRE NÓS</Link>
+                        <Link to ="/sobrenos">SOBRE NÓS</Link>
                     </li>
                     
                     <li class={styles.item}>
-                        <Link to ="/company">CONTATO</Link>
+                        <Link to ="/contato">CONTATO</Link>
                     </li>
                     
                     <li class={styles.item}>
-                        <Link to ="/newproject">ENTRAR</Link>
+                        <Link to ="/login">ENTRAR</Link>
                     </li>
                 </ul>
-           </Layout>
+           
         </nav>
     )
 

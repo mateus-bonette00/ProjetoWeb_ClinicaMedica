@@ -1,0 +1,47 @@
+import React, { useState } from "react";
+import CardSobreNos from "./Card_SobreNos";
+
+const CarouselSobreNos = ({ cards }) => {
+  const [currentCard, setCurrentCard] = useState(0);
+
+  const handleNext = () => {
+    setCurrentCard((currentCard + 1) % cards.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentCard((currentCard - 1 + cards.length) % cards.length);
+  };
+
+  return (
+    <div>
+      <div className="flex flex-row justify-center items-center  w-screen">
+        <button
+          className="prev-button text-black text-7xl"
+          onClick={handlePrev}
+        >
+        &lt;
+        </button>
+        <div className="fle">
+          {cards
+            .slice(currentCard, currentCard + 1)
+            .map((card, index) => (
+              <CardSobreNos
+                key={index}
+                title={card.title}
+                description={card.description}
+                imagePath={card.imagePath}
+              />
+            ))}
+        </div>
+        <button
+          className="prev-button text-black text-7xl"
+          onClick={handleNext}
+        >
+          &gt;
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default CarouselSobreNos;

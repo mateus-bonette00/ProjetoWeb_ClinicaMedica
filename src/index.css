@@ -3,10 +3,8 @@
 @import "tailwindcss/utilities";
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   font-family: "Dosis", sans-serif;
+  width: 0 auto;
 }
 
 html,
@@ -19,4 +17,32 @@ body,
   background-image: url("components/img/imageHome.png");
   background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
   background-position: center; /* Centraliza a imagem no elemento */
+  /* width: 0 auto; */
+}
+
+.bg-imagemSobreNos {
+  background-image: url("components/img/imageSobreNos.png");
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+  background-position: center; /* Centraliza a imagem no elemento */
+  /* width: 0 auto; */
+}
+
+#tituloSobreNos{
+  color: rgba(255, 255, 255, 0.90);
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 85vh;
+  font-size: 4rem;
+}
+
+.PageSobreNos{
+    overflow-x: hidden;
+}
+
+.PageHome{
+    overflow-x: hidden;
 }

@@ -6,8 +6,6 @@ import Contato from './components/pages/Contato'
 import Cadastro from './components/pages/Cadastro'
 import Login from './components/pages/Login'
 import SobreNos from './components/pages/SobreNos'
-
-import Layout from './components/containers/Layout'
 import Navbar from './components/containers/Navbar'
 import Footer from './components/containers/Footer'
 
@@ -19,7 +17,6 @@ function App() {
     <div>
       <Navbar />
       
-      <Layout customClass= 'teste'>
         <Routes>
             
             <Route path='/' element={<Home />} />
@@ -31,7 +28,7 @@ function App() {
         </Routes>
       
         
-      </Layout>
+    
       
       <Footer />
     </div>
