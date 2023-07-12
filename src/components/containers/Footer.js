@@ -7,11 +7,12 @@ import styles from './Footer.module.css'
 function Footer(){
     return(
         
-        <footer className={styles.footer}>
+        <footer className='bg-greeny h-[250px]'>
+            <div className='flex'>
                 <Link to='/'>
-                    <img src={logo} alt='logo' />
+                    <img className='h-48 w-72 ml-32 mr-[550px]' src={logo} alt='logo' />
                 </Link>        
-            <ul className={styles.social_list}>
+            <ul className='flex text-6xl mt-10 space-x-8 text-white'>
                 <li>
                     <FaFacebook />
                 </li>
@@ -22,7 +23,8 @@ function Footer(){
                     <FaLinkedin />
                 </li>
             </ul>
-            <p className={styles.copy_right}>
+            </div>
+            <p className='flex justify-center items-center bg-white h-12 mt-4'>
                 <span>Gustavo Noda - Thalles Alexsander- Mateus Bonette</span> &copy; 2023
             </p>
         </footer>

@@ -8,9 +8,9 @@ import logo from './logo_navbar.png'
 
 function Navbar() {
     return(
-        <nav class={styles.navbar}>
+        <nav className="bg-greeny fixed w-screen flex justify-center items-center space-x-56 z-20">
                 <Link to='/'>
-                    <img src={logo} alt='logo' />
+                    <img className="ml-4" src={logo} alt='logo' />
                 </Link>
                 <ul class={styles.list}>
                     <li class={styles.item}>

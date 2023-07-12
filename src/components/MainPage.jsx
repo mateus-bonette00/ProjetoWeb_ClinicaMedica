@@ -3,7 +3,7 @@ import React from "react";
 function MainPage() {
   return (
     <section className="bg-imagemHome flex flex-row w-screen h-screen justify-center">
-      <div className="mt-52">
+      <div className="mt-52 ml-26">
         <h1 className="text-white font-bold text-6xl w-[531px]">
           TRANSFORME SUA SAÚDE!
         </h1>
@@ -14,7 +14,7 @@ function MainPage() {
         </a>
       </div>
       <div>
-        <h2 className="text-white w-[670px] text-4xl mt-52 ml-20">
+        <h2 className="text-white w-[550px] text-4xl mt-52">
           Com nossa equipe especializada e técnicas comprovadas,
           ajudamos você superar todos os seus problemas!
         </h2>
