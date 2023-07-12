@@ -5,6 +5,8 @@ import imageCarouselSobreNos from '../img/carrouselSobreNos.png'
 import imageConsultorio1 from '../img/imgConsultorio1.png'
 import imageConsultorio2 from '../img/imgConsultorio2.png'
 import imageConsultorio3 from '../img/imgConsultorio3.png'
+import WppBotao from '../WppBotao';
+
 
 const cards = [
   {
@@ -29,6 +31,7 @@ function SobreNos (){
           <MainPageSobreNos />
           <TextSobreNos />
           <CarouselSobreNos cards={cards}/>
+          <WppBotao />
         </div>
       );
     }

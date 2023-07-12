@@ -1,12 +1,15 @@
 import LoginTema from "../LoginTema";
 import MainPage from "../MainPage";
+import WppBotao from '../WppBotao';
+
 
 function Login(){
 
     return(
-        <div className="LoginTema">
+        <div className="PageLogin">
             <MainPage />
             <LoginTema />
+            <WppBotao />
         </div>
     )
 

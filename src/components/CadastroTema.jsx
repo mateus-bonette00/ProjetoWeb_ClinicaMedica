@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 import { DevTool } from '@hookform/devtools';
-import '../styles/Cadastro.css';
+
 import {useForm} from 'react-hook-form';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -49,8 +49,8 @@ export default function Cadastro(){
 
 
     return (
-        <>
-            <form onSubmit={handleSubmit(submit)} noValidate>
+        <div className='formulario-cadastro' >
+            <form  onSubmit={handleSubmit(submit)} noValidate>
                 <label htmlFor="nome" placeholder="Primeiro nome*">Nome 1:</label>
                 <input type="text" id="nome" {...register('nome')} />
                 <p className='erro'>{errors.nome?.message}</p>
@@ -82,7 +82,7 @@ export default function Cadastro(){
                 Ja possui conta?
                 <Link to='/login'> Clique aqui!</Link>
             </div>
-        </>
+        </div>
     )
 
 }

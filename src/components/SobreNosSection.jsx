@@ -10,7 +10,7 @@ function SobreNosSection() {
   };
   
   return (
-    <section className="flex flex-col justify-center items-center w-screen mt-12 mb-12">
+    <section className="flex flex-col text-justify justify-center items-center w-screen mt-12 mb-12">
       <h1 className="text-greeny text-7xl mb-12">Sobre Nós</h1>
       <p className="w-[1000px] mb-8 first-letter:text-5xl first-letter:text-greeny">
         {" "}

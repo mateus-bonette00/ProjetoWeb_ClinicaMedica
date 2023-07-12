@@ -2,7 +2,7 @@ import React from "react";
 
 function TextSobreNos() {
   return (
-    <section className="flex flex-col justify-center items-center w-screen mt-12 mb-12">
+    <section className="flex flex-col text-justify justify-center items-center w-screen mt-12 mb-12">
       <p className="w-[1000px]  first-letter:text-5xl first-letter:text-greeny">
         
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.

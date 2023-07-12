@@ -1,5 +1,15 @@
+import MainPageContato from "../MainPage_Contato";
+import WppBotao from '../WppBotao';
+
 function Contato (){
-    return <h1>Contato.</h1>
-}
+    return (
+        <div className="PageContato">
+          <MainPageContato />
+          <WppBotao />
+        
+        </div>
+      );
+    }
+
 
 export default Contato

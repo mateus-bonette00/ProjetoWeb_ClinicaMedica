@@ -5,6 +5,7 @@ import SobreNosSection from "../SobreNosSection";
 import medicoImage from '../img/medico.jpg'
 import medicoImage2 from '../img/medico02.jpg'
 import medicoImage3 from '../img/medico03.jpg'
+import WppBotao from '../WppBotao';
 
 const cards = [
   {
@@ -48,6 +49,7 @@ function Home() {
       <SobreNosSection />
       <Carousel cards={cards} />
       <LocalMap />
+      <WppBotao />
     </div>
   );
 }

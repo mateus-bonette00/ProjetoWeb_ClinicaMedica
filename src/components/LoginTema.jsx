@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 import { DevTool } from '@hookform/devtools';
-import '../styles/Cadastro.css';
+
 // eslint-disable-next-line
 import {set, useForm} from 'react-hook-form';
 import { yupResolver } from "@hookform/resolvers/yup";
