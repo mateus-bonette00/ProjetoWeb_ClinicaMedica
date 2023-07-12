@@ -38,3 +38,8 @@
 .item a:hover {
     color: var(--hoverColor);
 }
+
+.hamburgerMenu {
+    color: white;
+    font-size: 40px;
+}
