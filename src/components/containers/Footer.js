@@ -7,12 +7,12 @@ import styles from './Footer.module.css'
 function Footer(){
     return(
         
-        <footer className='bg-greeny h-[250px]'>
-            <div className='flex'>
+        <footer className='bg-greeny h-[200px]'>
+            <div className='flex justify-center items-center align-middle'>
                 <Link to='/'>
-                    <img className='h-48 w-72 ml-32 mr-[550px]' src={logo} alt='logo' />
+                    <img className='h-36 mr-[550px]' src={logo} alt='logo' />
                 </Link>        
-            <ul className='flex text-6xl mt-10 space-x-8 text-white'>
+            <ul className='flex text-6xl space-x-8 text-white'>
                 <li>
                     <FaFacebook />
                 </li>

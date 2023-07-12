@@ -15,7 +15,7 @@ body,
 
 .bg-imagemHome {
   background-image: url("components/img/imageHome.png");
-  background-size: auto; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
   background-position: top; /* Centraliza a imagem no elemento */
   /* width: 0 auto; */
 }
