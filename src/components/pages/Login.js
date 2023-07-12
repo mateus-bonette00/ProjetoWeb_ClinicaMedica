@@ -1,5 +1,15 @@
-function Login (){
-    return <h1>Login.</h1>
+import LoginTema from "../LoginTema";
+import MainPage from "../MainPage";
+
+function Login(){
+
+    return(
+        <div className="LoginTema">
+            <MainPage />
+            <LoginTema />
+        </div>
+    )
+
 }
 
-export default Login
+export default Login;

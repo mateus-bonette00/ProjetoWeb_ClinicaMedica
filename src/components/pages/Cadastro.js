@@ -1,5 +1,15 @@
+import MainPage from "../MainPage";
+import CadastroTema from "../CadastroTema"
+
 function Cadastro (){
-    return <h1>Cadastro.</h1>
+    return (
+    <>
+        <MainPage />
+        <CadastroTema />
+        <h1>TESTANDOOOO</h1>
+        <h2>VAMOOOO</h2>
+    </>
+    )
 }
 
 export default Cadastro
