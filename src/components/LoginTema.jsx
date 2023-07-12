@@ -1,6 +1,5 @@
 // eslint-disable-next-line
 import { DevTool } from '@hookform/devtools';
-
 // eslint-disable-next-line
 import {set, useForm} from 'react-hook-form';
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -31,6 +30,7 @@ export default function Login(){
 
     const submit = async (data) => {
         
+        console.log('entrououou')
         try {
             // eslint-disable-next-line
             const response = await axios.post('http://localhost:3000/login', data);
@@ -44,32 +44,30 @@ export default function Login(){
     }
 
     if(msg.includes('Usuário Autenticado')){
-        return <Navigate to='/home' />
+        return <Navigate to='/' />
     }
 
     return (
-        <>
+        <div className='formulario'>
             <form onSubmit={handleSubmit(submit)} noValidate>
 
-                <label htmlFor="email" placeholder="email">Email</label>
-                <input type="text" id="email" {...register('email')} />
-                <p className='erro'>{errors.email?.message}</p>
+            <p className='erro'>{errors.email?.message}</p>
+            <input type="text" id="email" placeholder="E-mail*" {...register('email')} />
 
-                <label htmlFor="password">Senha</label>
-                <input type="password" id="password" {...register('password')} />
-                <p className='erro'>{errors.password?.message}</p>
+            <p className='erro'>{errors.password?.message}</p>
+            <input type="password" id="password" placeholder="Senha*" {...register('password')} />
 
-                <button>Entrar</button>
+            <p className="server-response">{msg}</p>
+            <button className='botaoLog'>Entrar</button>
             </form>
             {/* <DevTool control={control}/> */}
-            <p className="server-response">{msg}</p>
             <div>
                 Não possui conta? 
-                <Link to="/cadastro"> Cadastro</Link>
+                <Link to="/cadastro"> Clique aqui!</Link>
             </div>
             
             
-        </>
+        </div>
     )
 
 }

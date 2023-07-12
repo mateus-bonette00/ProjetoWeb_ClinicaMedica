@@ -1,6 +1,5 @@
 // eslint-disable-next-line
 import { DevTool } from '@hookform/devtools';
-
 import {useForm} from 'react-hook-form';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -40,7 +39,6 @@ export default function Cadastro(){
             const response = await axios.post('http://localhost:3000/cadastro', data);
             setMsg(response.data);
         } catch (error) {
-            console.log("enterou no error")
             console.log(error)
             setMsg(error.response.data);
         } 
@@ -49,33 +47,28 @@ export default function Cadastro(){
 
 
     return (
-        <div className='formulario-cadastro' >
+        <div className='formulario' >
             <form  onSubmit={handleSubmit(submit)} noValidate>
-                <label htmlFor="nome" placeholder="Primeiro nome*">Nome 1:</label>
-                <input type="text" id="nome" {...register('nome')} />
                 <p className='erro'>{errors.nome?.message}</p>
+                <input type="text" id="nome" placeholder="Primeiro nome*" {...register('nome')} />
 
-                <label htmlFor="sobrenome" placeholder="Sobrenome*">Nome 2:</label>
-                <input type="text" id="sobrenome" {...register('sobrenome')} />
                 <p className='erro'>{errors.sobrenome?.message}</p>
+                <input type="text" id="sobrenome" placeholder="Sobrenome*" {...register('sobrenome')} />
 
-                <label htmlFor="email" placeholder="email">Email</label>
-                <input type="text" id="email" {...register('email')} />
                 <p className='erro'>{errors.email?.message}</p>
+                <input type="text" id="email" placeholder="E-mail*" {...register('email')} />
 
-                <label htmlFor="password">Senha</label>
-                <input type="password" id="password" {...register('password')} />
                 <p className='erro'>{errors.password?.message}</p>
+                <input type="password" id="password" placeholder="Senha*" {...register('password')} />
 
-                <label htmlFor="password">Confirmar Senha</label>
-                <input type="password" id="passwordConf" {...register('passwordConf')} />
                 <p className='erro'>{errors.passwordConf?.message}</p>
-
-                <button>Submeter</button>
+                <input type="password" id="passwordConf" placeholder="Confirmar senha*" {...register('passwordConf')} />
+                <button className='botaoSub'>Submeter</button>
             </form>
+            {/* <button className='botaoSub'>Submeter</button> */}
             {/* A parte aqui de baixo serve para verificar se os dados estão dando certo */}
             {/* Mas vou desativar pq ja deu tudo certo */}
-            <DevTool control={control}/>
+            {/* <DevTool control={control}/> */}
             <p>{msg}</p>
 
             <div>
