@@ -12,7 +12,7 @@ function SobreNosSection() {
   return (
     <section className="flex flex-col text-justify justify-center items-center w-screen mt-12 mb-12">
       <h1 className="text-greeny text-7xl mb-12">Sobre Nós</h1>
-      <p className="mb-8 first-letter:text-5xl first-letter:text-greeny w-[350px]">
+      <p className="mb-8 first-letter:text-5xl first-letter:text-greeny w-[350px] lg:w-[1000px]">
         {" "}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Vestibulum vel auctor nisi. Phasellus tempor maximus eleifend.
@@ -27,7 +27,7 @@ function SobreNosSection() {
         arcu id porttitor. Fusce sed nulla ligula. Nunc quis accumsan
         ante.
       </p>
-      <p className="min-[200px]:w-[350px]">
+      <p className="min-[200px]:w-[350px] lg:w-[1000px]">
         Vivamus lacinia aliquam tempor. Pellentesque viverra, sem quis
         laoreet vehicula, nibh sem iaculis lectus, efficitur venenatis
         felis sapien nec ante. Etiam sem nibh, consectetur sit amet
