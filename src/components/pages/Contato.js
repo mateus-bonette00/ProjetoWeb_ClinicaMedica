@@ -4,9 +4,9 @@ import WppBotao from '../WppBotao';
 
 function Contato (){
     return (
-        <div className="PageContato">
+        <div className="PageContato mb-12">
           <MainPageContato />
-          <h1>Contato</h1>
+          <h1 className="mt-10">Contato</h1>
           <h2>Estamos sempre disponíveis para responder quaisquer dúvidas ou sugestões!</h2>
           <ContatoTema />
           <WppBotao />
