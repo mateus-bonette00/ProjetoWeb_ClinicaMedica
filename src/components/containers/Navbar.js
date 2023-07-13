@@ -44,7 +44,7 @@ function Navbar() {
             <img className="ml-4" src={logo} alt="logo" />
           </Link>
           {showMenu && (
-            <ul className="mt-2 bg-greeny text-white text-xl md:text-2xl rounded-lg p-4">
+            <ul className="mt-2 bg-greeny text-white text-xl md:text-2xl rounded-lg p-4 min-[200px]:text-2xl">
               <li>
                 <Link to="/">INÍCIO</Link>
               </li>
@@ -64,9 +64,9 @@ function Navbar() {
           )}
           <div className="relative mt-2">
             {showMenu ? (
-              <FaTimes className="text-white text-2xl md:text-3xl cursor-pointer" onClick={toggleMenu} />
+              <FaTimes className="text-white text-2xl md:text-3xl cursor-pointer min-[200px]:text-4xl min-[200px]:mb-10" onClick={toggleMenu} />
             ) : (
-              <FaBars className="text-white text-2xl md:text-3xl cursor-pointer" onClick={toggleMenu} />
+              <FaBars className="text-white text-2xl md:text-3xl cursor-pointer min-[200px]:text-6xl" onClick={toggleMenu} />
             )}
           </div>
         </div>

@@ -15,8 +15,8 @@ function LocalMap() {
 
   return (
     //chave da api para usar no mapa
-    <div className="flex flex-col ml-44 justify-center">
-      <h1 className="text-greeny text-3xl mb-3 mt-6">LOCALIZAÇÃO</h1>
+    <div className="flex flex-col justify-center ml-20">
+      <h1 className="text-greeny text-3xl mb-3 mt-6 ">LOCALIZAÇÃO</h1>
       <div className="z-0 mb-10">
         <LoadScript googleMapsApiKey="AIzaSyA5OfhakTgvAVPdnmy7L8umVe3mHvhBBwM">
           <GoogleMap

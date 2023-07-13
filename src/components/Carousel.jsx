@@ -16,7 +16,7 @@ const Carousel = ({ cards }) => {
   return (
     <div className="bg-greeny">
       <div>
-        <h1 className="mt-8 flex justify-center items-center text-white text-7xl pt-10">NOSSOS MÉDICOS</h1>
+        <h1 className="mt-8 flex justify-center items-center text-white text-7xl pt-10 min-[200px]:text-4xl">NOSSOS MÉDICOS</h1>
       </div>
       <div className="flex flex-row justify-center items-center bg-greeny w-screen h-[500px]">
         <button
