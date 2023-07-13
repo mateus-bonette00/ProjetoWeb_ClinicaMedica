@@ -6,8 +6,11 @@ function Contato (){
     return (
         <div className="PageContato">
           <MainPageContato />
-          <h1>Contato</h1>
-          <h2>Estamos sempre disponíveis para responder quaisquer dúvidas ou sugestões!</h2>
+          <div className="tema">
+            <h1 className="text-greeny justify-center text-7xl mb-5 mt-20">Contato</h1>
+            <h2 className="textoContato">Estamos sempre disponíveis para responder quaisquer dúvidas ou sugestões!</h2>
+
+          </div>
           <ContatoTema />
           <WppBotao />
         

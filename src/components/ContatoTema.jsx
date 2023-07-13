@@ -60,7 +60,7 @@ export default function ContatoTema(){
                 <p className='erro'>{errors.mensagem?.message}</p>
                 <textarea id="mensagem" placeholder="Mensagem*" {...register('mensagem')} className="inputMsg"></textarea>
 
-                <button className='botaoSub'>Enviar</button>
+                <button className='botaoCont'>Enviar</button>
             </form>
 
             {/* A parte aqui de baixo serve para verificar se os dados estão dando certo */}
