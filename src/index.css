@@ -140,8 +140,16 @@ input{
 
 .inputMsg{
   width: 400px;
-  height: 300px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  resize: none;
+  vertical-align: top;
+  margin-bottom: 20px;
 }
+
 
 
 .whatsapp-button {

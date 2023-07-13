@@ -58,7 +58,8 @@ export default function ContatoTema(){
                 <input type="telefone" id="telefone" placeholder="Telefone" {...register('telefone')} /> */}
 
                 <p className='erro'>{errors.mensagem?.message}</p>
-                <input type="mensagem" id="mensagem" placeholder="Mensagem*"  className='inputMsg'{...register('mensagem')} />
+                <textarea id="mensagem" placeholder="Mensagem*" {...register('mensagem')} className="inputMsg"></textarea>
+
                 <button className='botaoSub'>Enviar</button>
             </form>
 
