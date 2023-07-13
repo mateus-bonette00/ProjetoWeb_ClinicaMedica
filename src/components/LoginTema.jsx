@@ -16,7 +16,7 @@ const schema = yup.object({
 }).required();
 
 
-export default function Login(){
+export default function LoginTema(){
 
     const [msg, setMsg] = useState(' ');
 

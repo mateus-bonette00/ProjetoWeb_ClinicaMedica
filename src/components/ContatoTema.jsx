@@ -6,40 +6,39 @@ import * as yup from "yup";
 // eslint-disable-next-line
 import axios, * as others from 'axios';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 
 //as especificações da criação da conta
 const schema = yup.object({
     nome: yup.string().required('Nome obrigatório'),
-    sobrenome: yup.string().required('Sobrenome obrigatório'),
     email: yup.string().email('Email inválido').required('Email obrigatório'),
-    password: yup.string().min(3,'Senha com no mínimo 3 caracteres').required(),
-    passwordConf: yup.string().required('Confirme a senha').oneOf([yup.ref('password')], 'As senhas devem coincidir!'),
+    // telefone: yup.string(),
+    mensagem: yup.string().required('Escreva sua mensagem para nós!')
 }).required();
 
 
-export default function CadastroTema(){
+export default function ContatoTema(){
 
     const [msg, setMsg] = useState();
 
     const form = useForm({
         resolver: yupResolver(schema)
     });
+
     // eslint-disable-next-line
     const { register, control, handleSubmit, formState } = form;
 
     //controle de erros
     const {errors} = formState;
 
-    //Aqui é a função de quando o usuario aperta o botão 'submeter'
+    //Aqui é a função de quando o usuario aperta o botão 'Enviar'
     const submit = async (data) => {
 
         try {
-            const response = await axios.post('http://localhost:3000/cadastro', data);
+            const response = await axios.post('http://localhost:3000/contato', data);
             setMsg(response.data);
         } catch (error) {
-            console.log(error)
+            console.log('Entrou no erro')
             setMsg(error.response.data);
         } 
 
@@ -50,30 +49,24 @@ export default function CadastroTema(){
         <div className='formulario' >
             <form  onSubmit={handleSubmit(submit)} noValidate>
                 <p className='erro'>{errors.nome?.message}</p>
-                <input type="text" id="nome" placeholder="Primeiro nome*" {...register('nome')} />
-
-                <p className='erro'>{errors.sobrenome?.message}</p>
-                <input type="text" id="sobrenome" placeholder="Sobrenome*" {...register('sobrenome')} />
+                <input type="text" id="nome" placeholder="Nome*" {...register('nome')} />
 
                 <p className='erro'>{errors.email?.message}</p>
                 <input type="text" id="email" placeholder="E-mail*" {...register('email')} />
 
-                <p className='erro'>{errors.password?.message}</p>
-                <input type="password" id="password" placeholder="Senha*" {...register('password')} />
+                {/* <p className='erro'>{errors.telefone?.message}</p>
+                <input type="telefone" id="telefone" placeholder="Telefone" {...register('telefone')} /> */}
 
-                <p className='erro'>{errors.passwordConf?.message}</p>
-                <input type="password" id="passwordConf" placeholder="Confirmar senha*" {...register('passwordConf')} />
-                <button className='botaoSub'>Submeter</button>
+                <p className='erro'>{errors.mensagem?.message}</p>
+                <input type="mensagem" id="mensagem" placeholder="Mensagem*"  className='inputMsg'{...register('mensagem')} />
+                <button className='botaoSub'>Enviar</button>
             </form>
+
             {/* A parte aqui de baixo serve para verificar se os dados estão dando certo */}
             {/* Mas vou desativar pq ja deu tudo certo */}
             {/* <DevTool control={control}/> */}
             <p>{msg}</p>
 
-            <div>
-                Ja possui conta?
-                <Link to='/login'> Clique aqui!</Link>
-            </div>
         </div>
     )
 

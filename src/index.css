@@ -138,6 +138,11 @@ input{
   text-align: center;
 }
 
+.inputMsg{
+  width: 400px;
+  height: 300px;
+}
+
 
 .whatsapp-button {
   position: fixed;

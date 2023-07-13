@@ -4,6 +4,7 @@ const fs = require('fs');
 const cors = require('cors');
 
 const User = require('./models/User.js');
+const Envio = require('./models/envio.js');
 
 app.use(express.json());
 app.use(cors());
@@ -69,6 +70,25 @@ app.post('/login', async (req,res) => {
 
 })
 
+app.post('/contato', async (req,res) => {
+
+    //extraindo os dados do formulário para criacao do usuario
+    const {nome, email, mensagem} = req.body; 
+    
+    //Criacao da mensagem de contato
+    const envio = new Envio(nome, email, mensagem);
+    
+    //lendo o "banco de dados" dos contatos
+    const ContatosEnviados = JSON.parse(fs.readFileSync('contatos.json', { encoding: 'utf8', flag: 'r' }));
+
+
+    //Salva envio no "banco"
+    // é necessario iniciar o arquivo json com [] (uma lista vazia)
+    ContatosEnviados.push(envio);
+    fs.writeFileSync('contatos.json',JSON.stringify(ContatosEnviados,null,2));
+    res.send(`Mensagem enviada com sucesso.`);
+
+})
 
 app.listen(3000, () => {
     console.log('Servidor na porta 3000');
