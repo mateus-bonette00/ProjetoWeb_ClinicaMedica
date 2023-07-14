@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Projeto Web - Site Clínica Médica (UH Clínica)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição:
 
-## Available Scripts
+Este é um projeto web proposto pelo professor Phyllipe de Souza Lima Francisco na disciplina XDES03 - PROGRAMAÇÃO WEB dos cursos de Ciência da Computação e Sistemas de Informação da Universidade Federal de Itajubá (UNIFEI), que foi realizado pelos alunos Thalles Alexsander Faria Muzzo, Mateus de Freitas Bonette e Gustavo Kiyoshi Sousa Noda.
+Este projeto web será um site expositivo de uma clínica médica fictícia chamada “UH Clínica”. 
 
-In the project directory, you can run:
+E neste site terá os seguintes componentes:
 
-### `npm start`
+### Navbar: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A Navbar é a barra de navegação, é uma seção localizada no topo de um site que conterá uma logo da clínica e links para diferentes páginas ou seções do site.
+	E ela estará presente em todas as páginas do site.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Footer: 
 
-### `npm test`
+O Footer é o rodapé do site, localizado no fim do site na parte inferior, presente em todas as páginas.
+Nele conterá a logo da clínica, e ícones referente as redes sociais da clínica, como instagram, facebook e linkedin.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Botão do Whatsapp: 
 
-### `npm run build`
+O Botão do Whatsapp será um botão que terá em todas as páginas do site, que ao ser clicado, mandará o usuário para o chat do whatsapp da clínica.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Página Principal: 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Essa página conterá uma seção Main que nela haverá uma imagem ilustrativa de fundo, e em cima da imagem haverá 2 textos ambos ilustrativos, e também haverá um botão escrito nele “AGENDE AGORA”, que ao ser clicado mandará o usuário para o Whatsapp da clínica.
+Já abaixo desta seção Main, haverá a seção Sobre Nós, onde haverá um texto resumido sobre a clínica, que se o usuário quiser ver o texto completo ele terá que clicar no botão “Ver Mais” que direciona o usuário para a Página Sobre Nós.
+Abaixo da seção Sobre Nós, terá a seção Nossos Médicos, que nesta seção haverá um carrossel de cards mostrando os médicos que a clínica possui, contendo uma foto do médico seguido do seu nome e de sua especialização. 
+Por fim, haverá a seção Localização, onde através de uma API do Google Maps, irá mostrar um mapa mostrando onde está localizada a clínica.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Página Sobre Nós: 
 
-### `npm run eject`
+Essa página conterá uma seção Main que nela haverá uma imagem ilustrativa de fundo e bem no centro dessa imagem haverá um texto que será o título da página, “SOBRE NÓS”.
+Abaixo desta seção haverá a seção do texto completo sobre a clínica.
+Por fim, abaixo deste texto, terá um carrossel de imagens ilustrativas sobre a clínica.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Página Contato: 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Essa página conterá uma seção Main que nela haverá uma imagem ilustrativa de fundo e bem no centro dessa imagem haverá um texto que será o título da página, “CONTATO”.
+E abaixo desta seção main haverá uma seção de formulário de e-mail, que conterá uma barra de texto para o usuário preencher com o seu nome, logo depois outra barra de texto para o usuário preencher com o seu e-mail e por fim outra barra de texto para o usuário preencher com a mensagem que ele deseja mandar para o email da clínica. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Página Cadastrar: 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Essa será onde o usuário poderá cadastrar uma conta, preenchendo seus dados nas barras de texto. Caso ocorra algum erro no preenchimento dessas barras, o site informará o erro, como erro de senha já existente, e-mail já criado, erro de não preencher nada e deixar vazio o campo. Caso não tenha nenhum erro, o usuário clica no botão “Submeter”, o site direcionará o usuário para a página de Login.
 
-## Learn More
+### Página Login: 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Essa página, será onde o usuário poderá acessar a sua conta cadastrada na página Cadastrar, através de seus dados criados. Caso o usuário erre a senha ou o e-mail, irá aparecer um erro de login.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tecnologias Utilizadas
 
-### Code Splitting
+As tecnologias utilizadas foram:
+-  React Js
+-  HTML
+-  CSS
+-  Axios, react-icons, tailwind css, react-router-dom, react-hook-form e yup
+-  Backend: Node, nodemon e express.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Instalação
 
-### Analyzing the Bundle Size
+Para poder rodar esse projeto, você deve seguir os seguintes passos em seu terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Primeiro usa o:
+### `npm i`
 
-### Making a Progressive Web App
+Depois para poder mexer no backend use:
+### `cd back`
+### `npm i express`
+### `node index.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Depois disso tudo acima, você pode ja rodar o projeto usando:
+### `npm start.`
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contato dos Desenvolvedores:
 
-### Deployment
+Thalles Alexsander Faria Muzzo: 
+[https://www.linkedin.com/in/thalles-alexsander-faria-muzzo-76baa41a9/](https://www.linkedin.com/in/thalles-alexsander-faria-muzzo-76baa41a9/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Mateus de Freitas Bonette:
+[https://www.linkedin.com/in/mateus-bonette/](https://www.linkedin.com/in/mateus-bonette/)
+  
+Gustavo Kiyoshi Sousa Noda:
+[https://www.linkedin.com/in/gustavo-noda1/](https://www.linkedin.com/in/gustavo-noda1/)

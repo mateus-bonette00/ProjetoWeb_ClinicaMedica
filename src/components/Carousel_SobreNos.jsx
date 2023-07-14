@@ -28,8 +28,6 @@ const CarouselSobreNos = ({ cards }) => {
             .map((card, index) => (
               <CardSobreNos
                 key={index}
-                title={card.title}
-                description={card.description}
                 imagePath={card.imagePath}
               />
             ))}
